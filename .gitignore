@@ -1,0 +1,12 @@
+# Virtualenv
+.venv
+
+### VisualStudioCode
+.vscode/
+.history/
+
+### JetBrains
+.idea/
+
+
+
