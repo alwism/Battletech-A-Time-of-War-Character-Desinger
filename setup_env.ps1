@@ -16,11 +16,16 @@ function Print-Paths {
     Get-Command python
 }
 
+function Build-SampleApp {
+    pyinstaller  -w --noconfirm -n BAToWCD --onefile -i ./src/logo.ico ./src/entrypoint.py
+}
+
 function Execute-SampleApp {
-    python ./src/entrypoint.py
+    ./dist/BAToWCD.exe
 }
 
 Install-Python
 Setup-Virtualenv
 Print-Paths
+Build-SampleApp
 Execute-SampleApp

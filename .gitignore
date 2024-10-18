@@ -11,3 +11,7 @@
 ### pycache
 **/__pycache__
 
+### pyinstaller
+dist/
+build/
+*.spec
